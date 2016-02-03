@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html   xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta http-equiv="CONTENT-TYPE" CONTENT="TEXT/HTML;  charset=UTF-8"/>
+    <title>Beatiful Reservations</title>
+</head>
+<body>
+
+<H1>Reservations</H1>
+
+    <div th:each="r :${reservations}">
+            <div>
+                    <b th:text="${r.id}">ID</b> -
+                    <span th:text="${r.reservationName}">ReservationName</span>
+            </div>
+    </div>
+
+</body>
+</html>
